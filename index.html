@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+            rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+<! -- Envelope Screen --->
+    <div id="envelope-container">
+        <img src="envelope.png" alt="Envelope" id="envelope"/>
+        <p>A Letter For You ... </p>
+    </div>
+
+<! -- Letter Screen -->
+<div id="letter-container">
+    <div class="letter-window">
+        <h1 id="letter-title">Will You Be My Valentine?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" alt="Cat Heart"
+        />
+
+        <div class="buttons" id="letter-buttons">
+            <img src="yes.png" class="btn yes-btn" alt="Yes" />
+
+            <div class="no-wrapper">
+                <img src="no.png" class="btn no-btn" alt="No" />
+            </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+            <strong>Valentine Date:</strong> Ice Skating Rink @ Noon. Dress Warm.
+        </p>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
