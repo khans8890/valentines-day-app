@@ -35,6 +35,7 @@ body{
     animation: pulse 1.5s infinite;
     cursor: pointer;
 }
+
 #letter-container{
     display: none;
     position: fixed;
@@ -89,8 +90,8 @@ p {
     transition: width 0.4s ease;
 }
 
-.letter.window.final .cat{
-    width: 18px;
+.letter-window.final .cat{
+    width: 300px;
 }
 
 /*buttons*/
@@ -140,5 +141,79 @@ p {
     background-color: rgba(255, 240, 240, 0.5);
     border-radius: 12px;
     color: white;
+    margin: 10px 20px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 480px) {
+    #envelope {
+        width: 150px;
+    }
+
+    #envelope-container p {
+        font-size: 28px;
+    }
+
+    .letter-window {
+        padding-top: 120px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .cat {
+        width: 85px;
+    }
+
+    .letter-window.final .cat {
+        width: 100px;
+    }
+
+    .btn, .yes-btn, .no-btn {
+        width: 90px;
+    }
+
+    .buttons {
+        gap: 20px;
+    }
+
+    .final-text {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    #envelope {
+        width: 120px;
+    }
+
+    #envelope-container p {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .cat {
+        width: 150px;
+    }
+
+    .letter-window.final .cat {
+        width: 180px;
+    }
+
+    .btn, .yes-btn, .no-btn {
+        width: 75px;
+    }
+
+    .final-text {
+        font-size: 16px;
+    }
 }
 
